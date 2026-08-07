@@ -1,0 +1,11 @@
+# 순찰 시작 / 중지
+# 서버 : patrol_node -> 서비스 /set_patrol
+
+bool start          # true = 순찰 시작
+                    # false = 순찰 중지
+
+---
+bool success        # 명령 수락 여부
+                    # false 예시 : 이미 순찰 중인데 또 start,
+                    #                순찰 중이 아닌데 stop
+string message      # 결과 설명
